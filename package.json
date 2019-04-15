@@ -1,0 +1,27 @@
+{
+  "name": "liri-redo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medcoguy/Liri-Redo.git"
+  },
+  "author": "Drew Brooksbank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medcoguy/Liri-Redo/issues"
+  },
+  "homepage": "https://github.com/medcoguy/Liri-Redo#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
+    "inquirer": "^6.3.1",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "require": "^2.4.20"
+  }
+}
