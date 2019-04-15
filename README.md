@@ -2,7 +2,7 @@
 
 
 ## Overview
-#### LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
+#### LIRI  is a command-line app that will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
 
 -----------------------------------------------------
 ## Instructions
