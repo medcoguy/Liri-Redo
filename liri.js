@@ -4,7 +4,7 @@ let fs = require('fs'); //file system
 let Spotify = require('node-spotify-api');
 let request = require('request');
 let inquirer = require('inquirer');
-let space = "\n" + "         ";
+let blank = "\n" + "         ";
 let header = "----------------------------------------------------------------";
 let footer = "\n--------------------------------------------------------------";
 
@@ -20,10 +20,10 @@ function fetchSpotify(songTitle) {
         } else {
             output =
                 header +
-                space +  "Artist(s) Name: " + data.tracks.items[0].album.artists[0].name +
-                space + "Song Title: " + "'" + songTitle.toUpperCase() + "'" +
-                space + "Song Preview: " + data.tracks.items[0].album.external_urls.spotify +
-                space + "Album Name: " + data.tracks.items[0].album.name +
+                blank +  "Artist(s) Name: " + data.tracks.items[0].album.artists[0].name +
+                blank + "Song Title: " + "'" + songTitle.toUpperCase() + "'" +
+                blank + "Song Preview: " + data.tracks.items[0].album.external_urls.spotify +
+                blank + "Album Name: " + data.tracks.items[0].album.name +
                 footer;
             console.log(output);
         }
@@ -42,11 +42,11 @@ request(URL, function(err, res, body) {
     } else {
         let jsonDataBand = JSON.parse(body);
         
-        output = space + header +
-            space + 'Artist Name: ' + bandName +
-            space + 'Name of Venue: ' + jsonDataBand[0].venue.name +
-            space + 'Location of Venue: ' + jsonDataBand[0].venue.city +
-            space + 'Date of Concert: ' + jsonDataBand[0].datetime +
+        output = blank + header +
+            blank + 'Artist Name: ' + bandName +
+            blank + 'Name of Venue: ' + jsonDataBand[0].venue.name +
+            blank + 'Location of Venue: ' + jsonDataBand[0].venue.city +
+            blank + 'Date of Concert: ' + jsonDataBand[0].datetime +
             "\n" + footer;
 
         console.log(output);
@@ -67,15 +67,15 @@ let fetchMovie = function(movieName) {
             return;
         } else {
             let jsonData = JSON.parse(body);
-            output = space + header +
-                space + 'Title: ' + jsonData.Title +
-                space + 'Year: ' + jsonData.Year +
-                space + 'IMDB Rating: ' + jsonData.imdbRating +
-                space + 'Tomato Rating: ' + jsonData.Ratings[1].Value +
-                space + 'Country: ' + jsonData.Country +
-                space + 'Language: ' + jsonData.Language +
-                space + 'Plot: ' + jsonData.Plot +
-                space + 'Actors: ' + jsonData.Actors +
+            output = blank + header +
+                blank + 'Title: ' + jsonData.Title +
+                blank + 'Year: ' + jsonData.Year +
+                blank + 'IMDB Rating: ' + jsonData.imdbRating +
+                blank + 'Tomato Rating: ' + jsonData.Ratings[1].Value +
+                blank + 'Country: ' + jsonData.Country +
+                blank + 'Language: ' + jsonData.Language +
+                blank + 'Plot: ' + jsonData.Plot +
+                blank + 'Actors: ' + jsonData.Actors +
                 "\n" + footer;
 
             console.log(output);
