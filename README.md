@@ -8,9 +8,9 @@
 ## Instructions
 1. Open your command line terminal.
 2. Navigate to the folder that contains the liri.js file.
-3. Type :node liri.js"
+3. Type: "node liri.js"
 4. Follow the instructions shown in your terminal. 
-5. See the inclluded Gif for a snapshot of the functionality.
+5. See the included Gif for a snapshot of the functionality.
 6. Note that if a Song/Movie/Band is not selected, but the enter key is pressed, a default answer will be shown. 
 
 -----------------------------------------------------
